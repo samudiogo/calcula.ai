@@ -6,14 +6,14 @@ namespace calcula.ai.Core.Entities
     {
         public Guid Id { get; set; }
         public string Nome { get; set; }
-        public float Ml { get; set; }
+        public decimal Ml { get; set; }
         public decimal Preco { get; set; }
 
-        public decimal PrecoPorMl() => Preco / (decimal) Ml;
+        public decimal PrecoPorMl => Preco / Ml;
 
-        public float MlTotalNoOrcamento(decimal montante)
+        public decimal MlTotalNoOrcamento(decimal montante)
         {
-            return (float) ((montante / Preco) * (decimal) Ml);
+            return (montante / Preco) * Ml;
         }
     }
 }

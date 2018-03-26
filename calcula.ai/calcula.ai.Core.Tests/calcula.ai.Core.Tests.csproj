@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\calcula.ai.Core\calcula.ai.Core.csproj">
-      <Project>{46D62B3F-4376-4421-B730-1773BC531550}</Project>
+      <Project>{46d62b3f-4376-4421-b730-1773bc531550}</Project>
       <Name>calcula.ai.Core</Name>
     </ProjectReference>
   </ItemGroup>

@@ -13,7 +13,7 @@ namespace calcula.ai.App
 		{
 			InitializeComponent();
 
-			MainPage = new calcula.ai.App.MainPage();
+			MainPage = new ComparaBebida();
 		}
 
 		protected override void OnStart ()

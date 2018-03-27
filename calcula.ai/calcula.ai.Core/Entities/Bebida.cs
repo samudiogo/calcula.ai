@@ -10,10 +10,13 @@ namespace calcula.ai.Core.Entities
         public decimal Preco { get; set; }
 
         public decimal PrecoPorMl => Preco / Ml;
+        
 
         public decimal MlTotalNoOrcamento(decimal montante)
         {
             return (montante / Preco) * Ml;
         }
+
+        public override string ToString() => $"Bebida: Nome: {Nome}, {Ml}ml, Preço: R${Preco:C}";
     }
 }

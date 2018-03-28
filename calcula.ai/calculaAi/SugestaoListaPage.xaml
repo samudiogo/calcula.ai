@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="calculaAi.SugestaoListaPage">
+    <ContentPage.Padding>
+        <OnPlatform iOS="20" x:TypeArguments="Thickness" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center">
+            <BoxView HeightRequest="50" />
+            <Label Text="Sugestões de Compras de cerveja!" FontSize="26" XAlign="Center" />
+            <StackLayout Margin="20" BackgroundColor="Silver">
+                <Grid Padding="20" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="1º" Grid.Row="0" Grid.Column="0" FontSize="70" />
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label Text="Cracudinha" x:Name="CampeaNome" />
+                        <Label Text="23" x:Name="CampeaUnidade" />
+                        <Label Text="6187" x:Name="CampeaMl" />
+                        <Label Text="R$ 38,00" x:Name="CampeaPreco" />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+            <ListView x:Name="ListaSugestaoCompraView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Posicao}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

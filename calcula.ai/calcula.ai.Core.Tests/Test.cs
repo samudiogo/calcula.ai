@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using NUnit.Framework;
+using System;
 using calcula.ai.Core.Entities;
 using calcula.ai.Core.UserCases;
-using NUnit.Framework;
-
-
+using System.Collections.Generic;
+using System.Linq;
 namespace calcula.ai.Core.Tests
 {
     /// <summary>
@@ -42,11 +40,11 @@ namespace calcula.ai.Core.Tests
             var sut = new ComparaBebida();
             var result = sut.ListaMelhorEscolha(listaBebida, naCarteira).ToList();
             Assert.That(result.First().Value.Bebida.Nome, Is.EqualTo(cracudinha.Nome));
-            
+
             TestContext.Out.WriteLine($"Fui no Guanabara comprar cerveja, tenho R$ {naCarteira} na carteira.. Qual é a sugestão de compra?");
             foreach (var melhorEscolha in result)
             {
-                TestContext.Out.WriteLine($"{melhorEscolha.Key} - {melhorEscolha.Value}");    
+                TestContext.Out.WriteLine($"{melhorEscolha.Key} - {melhorEscolha.Value}");
             }
         }
     }

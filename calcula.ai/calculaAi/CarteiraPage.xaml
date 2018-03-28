@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="calculaAi.CarteiraPage" Padding="20">
+    <ContentPage.Content>
+        <StackLayout Spacing="0" Padding="0">
+            <BoxView HeightRequest="100" />
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="40" Spacing="20">
+                <Label Text="Quanto em reais você pretende gastar?" XAlign="Center" />
+                <Entry Placeholder="R$ 0,00" x:Name="TxtDinheiro" Keyboard="Numeric" HorizontalOptions="Center" />
+                <Button Text="Próximo" x:Name="BtnProximo" Clicked="Handle_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

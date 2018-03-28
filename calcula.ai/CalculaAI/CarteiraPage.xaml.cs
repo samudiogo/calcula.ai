@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace calculaAi
+namespace CalculaAI
 {
     public partial class CarteiraPage : ContentPage
     {
@@ -14,7 +14,7 @@ namespace calculaAi
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            App.Current.MainPage = new SugestaoListaPage();
+            Application.Current.MainPage = new SugestaoListaPage();
         }
     }
 }

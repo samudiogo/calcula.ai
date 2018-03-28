@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>calculaAi</string>
+	<string>CalculaAI</string>
 	<key>CFBundleName</key>
-	<string>calculaAi</string>
+	<string>CalculaAI</string>
 	<key>CFBundleIdentifier</key>
-	<string>br.com.sdtech.calculaAi</string>
+	<string>br.com.sdtech.CalculaAI</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -42,9 +42,5 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleLightContent</string>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false />
 </dict>
 </plist>

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace calculaAi.iOS
+namespace CalculaAI.iOS
 {
     public class Application
     {
